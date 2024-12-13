@@ -1,0 +1,36 @@
+/* For tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .header nav ul li {
+    margin: 10px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar {
+    display: block;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .header nav ul {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

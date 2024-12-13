@@ -1,0 +1,154 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 32px;
+  }
+  
+  /* Top Section */
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  
+  /* Newsletter Section */
+  .newsletter-section {
+    max-width: 600px;
+  }
+  
+  .newsletter-section h2,
+  .contact-section h2,
+  .footer-column h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .newsletter-section p {
+    margin-bottom: 16px;
+  }
+  
+  .email-container {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .email-input {
+    flex: 1;
+    padding: 12px;
+    background: white;
+    color: black;
+    border: none;
+  }
+  
+  .subscribe-btn {
+    padding: 12px 32px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .subscribe-btn:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Contact Section */
+  .contact-info {
+    margin-bottom: 8px;
+  }
+  
+  .currency-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .currency-flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  .currency-note {
+    font-size: 14px;
+  }
+  
+  /* Links Section */
+  .footer-links-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-top: 32px;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  .social-icon:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Payment Methods */
+  .payment-methods {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .payment-methods img {
+    height: 32px;
+    width: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-top {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-links-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .email-container {
+      flex-direction: column;
+    }
+  }
